@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Comic+Relief:wght@400;700&display=swap');
+
+body {
+	font-family: "Comic Neue", system-ui;
+	font-weight: 400;
+	font-style: normal;
+	background: linear-gradient(rgba(20,61,39,.85), rgba(20,61,39,.85)), url(https://www.eccobandeiras.com.br/image/cache/catalog/antigas/Rio-Grande-do-Sul-1111x740.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: #F3E9D8;
+}
+
+.topnav {
+	background-color: #3C2417;
+	border-bottom: 3px solid #D9A441;
+
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 0 15px;
+}
+
+.topnav a {
+	display: block;
+	color: #F3E9D8;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.topnav a:hover {
+	background-color: #5B3A29;
+	color: #F3E9D8;
+}
+
+.topnav a.active {
+	background-color: #B1342F;
+	color: #F3E9D8;
+}
+
+.topnav input[type=text] {
+	padding: 8px 12px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 17px;
+	background-color: #5B3A29;
+	color: #F3E9D8;
+	border: 1px solid #D9A441;
+	border-radius: 6px;
+	margin-left: auto;
+
+}
+
+.topnav input[type=text]::placeholder {
+	color: #CDB798;
+}
+
+.albums {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 25px;
+	padding: 40px;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.album {
+	width: 170px;
+	text-align: center;
+	background: rgba(31, 92, 58, 0.95);
+	border: 2px solid #5B3A29;
+	border-radius: 12px;
+	padding: 12px;
+	transition: .3s;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+}
+
+.album:hover {
+	transform: scale(1.05);
+	border-color: #D9A441;
+	box-shadow: 0 8px 20px rgbs(0, 0, 0, .5);
+}
+
+.album img {
+	width: 100%;
+	border-radius: 8px;
+	border: 2px solid #CDB798;
+}
+
+.album p {
+	font-weight: 700;
+	color: #F3E9D8;
+}
+
+.music-player {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: #3C2417;
+	border-top: 3px solid #D9A441;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 25px;
+	box-sizing: border-box;
+	color: #F3E9D8;
+	box-shadow: 0 -5px 20px rgba(0, 0, 0, .5);
+}
+
+.song-info {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.song-info img {
+	width: 55px;
+	height: 55px;
+	border-radius: 5px;
+}
+
+.song-info h4 {
+	margin: 0;
+	color: #F3E9D8;
+}
+
+.song-info p {
+	margin: 0;
+	color: #CDB798;
+}
+
+.controls {
+	display: flex;
+	gap: 15px;
+}
+
+.controls button {
+	border: none;
+	background: #B1342F;
+	color: #F3E9D8;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 18px;
+	transition: .2s;
+}
+
+.controls button:hover {
+	background: #D9A441;
+	color: #3C2417;
+	transform: scale(1.1);
+}
+
+.progress {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #CDB798;
+}
+
+.progress input[type=range] {
+	width: 220px;
+	accent-color: #D9A441;
+}
